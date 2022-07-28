@@ -101,5 +101,6 @@ def checkout(skus):
                 + 20*num_W + 17*num_X + 20*num_Y + 21*num_Z + 45*group_discount_num
         return total
 
-skus = "SSSXS"
-print(checkout(skus))
+#skus = "SXSXS"
+#print(checkout(skus))
+
