@@ -16,6 +16,7 @@ def checkout(skus):
             + 20*num_C + 15*num_D
     return total
 
-skus = "A,B,C,A"
-print(checkout(skus))
+#skus = "A,B,C,A,A"
+#print(checkout(skus))
+
 
