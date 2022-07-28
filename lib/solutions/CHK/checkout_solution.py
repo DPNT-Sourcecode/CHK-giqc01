@@ -18,7 +18,8 @@ def checkout(skus):
         discount_A_2 = num_A_d//3
 
         discount_E = num_E//2
-        num_B -= discount_E
+        if num_B >= 1:
+            num_B -= discount_E
 
         discount_B = num_B//2
 
@@ -26,7 +27,8 @@ def checkout(skus):
                 + 20*num_C + 15*num_D + 40*num_E
         return total
 
-#skus = "AAAAAAAA"
-#print(checkout(skus))
+skus = "EE"
+print(checkout(skus))
+
 
 
