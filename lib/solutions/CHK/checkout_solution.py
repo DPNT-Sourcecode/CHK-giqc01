@@ -3,6 +3,11 @@
 # noinspection PyUnusedLocal
 # skus = unicode string
 def checkout(skus):
+    if skus.count('a') >= 1:
+        return -1
+    if skus.count('-') >= 1:
+        return -1
+    
     num_A = skus.count('A')
     num_B = skus.count('B')
     num_C = skus.count('C')
@@ -18,5 +23,6 @@ def checkout(skus):
 
 #skus = "A,B,C,A,A"
 #print(checkout(skus))
+
 
 
