@@ -31,5 +31,6 @@ def checkout(skus):
                 + 20*num_C + 15*num_D + 40*num_E + 10*num_F
         return total
 
-skus = "FFFF"
+skus = "FFFFFF"
 print(checkout(skus))
+
