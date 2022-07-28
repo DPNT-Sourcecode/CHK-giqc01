@@ -3,4 +3,19 @@
 # noinspection PyUnusedLocal
 # skus = unicode string
 def checkout(skus):
-    return NotImplementedError()
+    num_A = skus.count('A')
+    num_B = skus.count('B')
+    num_C = skus.count('C')
+    num_D = skus.count('D')
+
+    discount_A = num_A//3
+
+    discount_B = num_B//2
+
+    total = 50*num_A - 20*discount_A + 30*num_B - 15*discount_B\
+            + 20*num_C + 15*num_D
+    return total
+
+skus = "A,B,C,A"
+print(checkout(skus))
+
