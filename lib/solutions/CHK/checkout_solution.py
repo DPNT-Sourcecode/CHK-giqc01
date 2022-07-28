@@ -80,18 +80,18 @@ def checkout(skus):
         group_discount_items = num_S + num_T + num_X + num_Y + num_Z
         group_discount_num = group_discount_items//3
         items_to_remove = 3*group_discount_num
-        #removal priority: x>s>t>y>z
+        #removal priority: z>y>t>s>x
         for i in range(items_to_remove):
-            if num_X >= 1:
-                num_X -=1
-            elif num_S >=1:
-                num_S -=1
-            elif num_T >=1:
-                num_T -=1
+            if num_Z >= 1:
+                num_Z -=1
             elif num_Y >=1:
                 num_Y -=1
-            elif num_Z >=1:
-                num_Z -=1
+            elif num_T >=1:
+                num_T -=1
+            elif num_S >=1:
+                num_S -=1
+            elif num_X >=1:
+                num_X -=1
 
         total = 50*num_A - 50*discount_A_1 - 20*discount_A_2  + 30*num_B - 15*discount_B\
                 + 20*num_C + 15*num_D + 40*num_E + 10*num_F + 20*num_G + 10*num_H -20*discount_H_1\
@@ -101,6 +101,7 @@ def checkout(skus):
                 + 20*num_W + 17*num_X + 20*num_Y + 21*num_Z + 45*group_discount_num
         return total
 
-#skus = "SXSXS"
-#print(checkout(skus))
+skus = "STXS"
+print(checkout(skus))
+
 
