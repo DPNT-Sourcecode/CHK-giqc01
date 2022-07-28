@@ -69,7 +69,7 @@ def checkout(skus):
 
         discount_Q = num_Q//3
         
-        discount_U = num_U//3
+        discount_U = num_U//4
         num_U -= discount_U
 
         num_V_d = num_V #num_V_d: number of V that can be discounted
@@ -86,6 +86,7 @@ def checkout(skus):
                 + 20*num_W + 90*num_X + 10*num_Y + 50*num_Z
         return total
 
-#skus = "ABCDEFGHIJKLMNOPQUUUUUUUURSTUVWXYZ"
-#print(checkout(skus))
+skus = "VVV"
+print(checkout(skus))
+
 
